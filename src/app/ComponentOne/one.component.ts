@@ -8,7 +8,15 @@ import { Component } from '@angular/core';
                 Inline template
               </div>`
   */
-  styleUrls: ['./one.component.css']
+  styleUrls: ['./one.component.css'];
+  /*
+    style: [`
+      div{
+        color: red;
+        background: black
+      }
+    `]
+  */
 })
 export class ComponentOne {
   name: string = "Andrew"
