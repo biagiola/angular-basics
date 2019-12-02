@@ -25,7 +25,7 @@ export class EventBinding {
   
   onClick(event) {
       console.log(event);
-      this.greeting = "type of the event: " + event.type;
+      this.greeting = "event.type: " + event.type;
   }
 
 }
