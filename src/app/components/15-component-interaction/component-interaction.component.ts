@@ -1,25 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-component-interaction',
-  template: `<div>
-                        <h2>{{ 'Hello ' + parentDataManager }}</h2>
-                    </div>`,
-  styles: [`
-    div {
-      background: #cdcdcd;
-      padding: 3px;
-      text-align: center;
-      font-family: lato;
-    }
-  `]
+  templateUrl: './component-interaction.component.html',
+  styles: [``]
 })
-export class ComponentInteraction implements OnInit{
-
-  @Input() public parentData;
+export class ComponentInteraction  {
   
-  ngOnInit() {
-
-  }
+  public name = "Augusto Roa Bastos"
 
 }
