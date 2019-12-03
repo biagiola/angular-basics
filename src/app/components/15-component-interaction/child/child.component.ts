@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -11,13 +11,20 @@ import { Component, OnInit, Input } from '@angular/core';
       font-family: lato;
     }`]
 })
-export class ChildComponent implements OnInit {
+export class ChildComponent {
 
-  @Input() public parentData: string;
+  /* Data coming from the parent component */
+  // Case 1
+  //@Input() public parentData: string;
 
-  constructor() { }
+  // Case 2
+  @Input('parentData') public name: string;
 
-  ngOnInit() {
+  /* Sending data from the parent to the child component */
+  @Output() public childEvent = new EventEmitter();
+
+  fireEvent() {
+      this.childEvent.emit('Hey coder!');
   }
 
 }
