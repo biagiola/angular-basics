@@ -21,6 +21,13 @@ import { ngIfDirective } from './components/12-ng-if-directive/ng-if-directive';
 import { ngSwitchDirective } from './components/13-ng-switch-directive/ng-switch-directive.component';
 import { ngForDirective } from './components/14-ng-for-directive/ng-for-directive.component';
 import { ComponentInteraction } from './components/15-component-interaction/component-interaction.component';
+import { ChildComponent } from './components/15-component-interaction/child/child.component';
+import { Pipes } from './components/16-pipes/pipes.component';
+
+import { EmployeeService } from './components/17-services/employee.service';
+import { EmployeeList } from './components/17-services/employee-list/employee-list.component';
+import { EmployeeDetails } from './components/17-services/employee-details/employee-details.component'; 
+
 
 @NgModule({
   declarations: [
@@ -31,23 +38,32 @@ import { ComponentInteraction } from './components/15-component-interaction/comp
     BoxThreeComponent,
 
     Interpolation,
+
     BindingProperty,
     ClassBinding,
     StyleBinding,
     EventBinding,
+    
     TemplateReferenceVariables,
     TwoWayBinding,
+    
     ngIfDirective,
     ngSwitchDirective,
     ngForDirective,
+    
     ComponentInteraction,
+    ChildComponent,
+    Pipes,
+
+    EmployeeList,
+    EmployeeDetails
     
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ EmployeeService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
