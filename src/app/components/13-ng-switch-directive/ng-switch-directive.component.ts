@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-ng-switch-directives',
   template: `<div>
 
-                        <h2>Welcome {{text}}</h2>
+                        <h2>13 - {{text}}</h2>
 
                         <div [ngSwitch]="color">
                             <div *ngSwitchCase=" 'red' ">You picked red color</div>

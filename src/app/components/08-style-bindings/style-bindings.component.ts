@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-style-binding',
   template: `<div>
-                        <h2 [style.color]="'orange'">Style Bindings 01</h2>
+                        <h2 [style.color]="'orange'">8 - Style Bindings</h2>
                         <h2 [style.color]="hasError ? 'red' : 'green' ">{{ text }}</h2>
                         <h2 [style.color]="highlightColor">Style Bindings 02</h2>
                         <h2 [ngStyle]="titleStyles">Style Bindings 03</h2> 
-                    </div>`,
+                    </div><br/>`,
   styles: [`
     div{
       background: #cdcdcd;

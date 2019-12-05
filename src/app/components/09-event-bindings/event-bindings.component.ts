@@ -3,12 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-event-binding',
   template: `<div>
-                        <h2>Welcome {{text}}</h2>
+                        <h2>9 - {{text}}</h2>
                         <button (click)="onClick($event)">Greet01</button>
                         {{ greeting }}
                         <button (click)="greeting='Hi there' ">Greet02</button> 
-                        
-                    </div>`,
+                    </div><br/>`,
   styles: [`
     div{
       background: #cdcdcd;

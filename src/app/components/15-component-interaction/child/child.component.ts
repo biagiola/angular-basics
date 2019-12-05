@@ -14,10 +14,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ChildComponent {
 
   /* Data coming from the parent component */
-  // Case 1
+  // Way 1
   //@Input() public parentData: string;
 
-  // Case 2
+  // Way 2
   @Input('parentData') public name: string;
 
   /* Sending data from the parent to the child component */

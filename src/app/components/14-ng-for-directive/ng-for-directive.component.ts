@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-ng-for-directives',
   template: `<div>
 
-                        <h2>Welcome {{text}}</h2>
-                        
+                        <h2>14 - {{text}}</h2>
                         <div *ngFor="let color of colors; index as i; first as f; second as s; last as l; odd as o; even as e">
                             <h4> {{ i+1 }} - {{ color }} - first : {{ f }} - last: {{ l }} - odd: {{ o }} - even: {{ e }}</h4>
                         </div>

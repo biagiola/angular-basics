@@ -3,9 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-ng-if-directives',
   template: `<div>
+                        
+                        <h2 *ngIf="true">12 - {{text}}</h2>
                         <h2 *ngIf="false">This h2 dont show it</h2>
-                        <h2 *ngIf="true">Welcome {{text}}</h2>
-
+                        
                         <h2 *ngIf="displayOne; else elseBlock">
                             if block entered - *ngIf=" ";
                         </h2>
@@ -35,7 +36,7 @@ import { Component } from '@angular/core';
 })
 export class ngIfDirective {
 
-  public text: string = 'ng If Directives';
+  public text: string = 'ng if directives';
 
   displayOne: boolean = false;  
   displayTwo: boolean = false;  

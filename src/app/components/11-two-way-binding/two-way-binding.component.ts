@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-two-way-binding',
   template: `<div>
-                        <h2>Welcome {{text}}</h2>
+                        <h2>11 - {{text}}</h2>
                         <input [(ngModel)]="name"  type="text">
                         {{ name }}
                     </div><br/>`,
@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
 })
 export class TwoWayBinding {
 
-  public text: string = 'Two Way Binding';
+  public text: string = 'Two way binding';
   public name: any = "";
   
 } 
