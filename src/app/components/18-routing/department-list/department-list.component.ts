@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-department-list',
-  templateUrl: './department-list.component.html',
-  styleUrls: ['./department-list.component.css']
+  template: `
+    <div>Departments component works</div>
+  `,
+  styles: [``]
 })
-export class DepartmentListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class DepartmentListComponent {
 
 }
