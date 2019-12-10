@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
@@ -26,7 +27,9 @@ import { Pipes } from './components/16-pipes/pipes.component';
 
 import { EmployeeService } from './components/17-services/employee.service';
 import { EmployeeList } from './components/17-services/employee-list/employee-list.component';
-import { EmployeeDetails } from './components/17-services/employee-details/employee-details.component'; 
+import { EmployeeDetails } from './components/17-services/employee-details/employee-details.component';
+import { DepartmentListComponent } from './components/18-routing/department-list/department-list.component';
+import { EmployeeListComponent } from './components/18-routing/employee-list/employee-list.component'; 
 
 
 @NgModule({
@@ -56,12 +59,18 @@ import { EmployeeDetails } from './components/17-services/employee-details/emplo
     Pipes,
 
     EmployeeList,
-    EmployeeDetails
+    EmployeeDetails,
+    DepartmentListComponent,
+    EmployeeListComponent,
+
+    routingComponents
     
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [ EmployeeService ],
   bootstrap: [AppComponent]
