@@ -28,9 +28,11 @@ import { Pipes } from './components/16-pipes/pipes.component';
 import { EmployeeService } from './components/17-services/employee.service';
 import { EmployeeList } from './components/17-services/employee-list/employee-list.component';
 import { EmployeeDetails } from './components/17-services/employee-details/employee-details.component';
-import { DepartmentListComponent } from './components/18-routing/department-list/department-list.component';
-import { EmployeeListComponent } from './components/18-routing/employee-list/employee-list.component'; 
 
+import { DepartmentListComponent } from './components/18-routing/department-list/department-list.component';
+import { EmployeeListComponent } from './components/18-routing/employee-list/employee-list.component';
+import { PageNotFoundComponent } from './components/18-routing/page-not-found/page-not-found.component';
+import { DepartmentDetailComponent } from './components/18-routing/department-detail/department-detail.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { EmployeeListComponent } from './components/18-routing/employee-list/emp
     DepartmentListComponent,
     EmployeeListComponent,
 
-    routingComponents
+    routingComponents,
+    PageNotFoundComponent,
+    DepartmentDetailComponent
     
   ],
   imports: [
