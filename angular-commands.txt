@@ -1,0 +1,16 @@
+ng --version // version of the cli
+
+ng serve --open // open the server
+
+ng generate componenet nameComponent1 // generate componenet
+
+ng g c name-component2 // short version
+
+ng g c name-component3 -it -is // inline template inline style
+
+ng g s service-component1 // generate services
+
+ng g c route-demo --routing // generate a component with a router
+
+
+
