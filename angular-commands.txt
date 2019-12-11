@@ -1,5 +1,21 @@
+CLI 
 ng --version // version of the cli
 
+ng update <package> // update packages
+
+ng add @angular/material // add functionalities; here is an example
+
+CLI + MATERIAL STARTER TEMPLATES
+ng generate @angular/material:material-nav --name=my-nav // add a responsive sidenav
+
+ng generate @angular/material:material-dashboard --name=my-dashboard // add a dynamic grid list of cards
+
+ng generate @angular/material:material-table --name=my-table // add a table with data source for sorting and pagination
+
+
+
+
+FRAMEWORK
 ng serve --open // open the server
 
 ng generate componenet nameComponent1 // generate componenet
